@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- THE WALNUT | latest build 18 Oct 2026 | Pexels photos + glass design + room modals -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Walnut — A Mountain Retreat in Pahalgam</title>
+<meta name="description" content="The Walnut is a demonstration boutique mountain retreat in Pahalgam, Kashmir.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== EDIT ME: photos =====
+   Put your photos in an /images folder and use these names (or change the paths).
+   If a photo is missing, the gradient behind it is shown instead. */
+:root{
+  --forest:#14301f; --forest-2:#1f4430; --ivory:#f4efe2; --walnut:#5b3e2b; --gold:#b9975b; --stone:#bdb7a8; --ink:#1b211c;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
+  /* TEMPORARY PREVIEW: Pexels photos of Kashmir/Pahalgam (free to use).
+     Swap each line for url(images/your-photo.jpg) later. */
+  --scene:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271600%27%20height%3D%27900%27%20viewBox%3D%270%200%201600%20900%27%20preserveAspectRatio%3D%27xMidYMid%20slice%27%3E%0A%3Cdefs%3E%3ClinearGradient%20id%3D%27s%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%270%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%237fa0b0%27%2F%3E%3Cstop%20offset%3D%27.55%27%20stop-color%3D%27%23d9d6c3%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23f1dfb9%27%2F%3E%3C%2FlinearGradient%3E%0A%3CradialGradient%20id%3D%27g%27%20cx%3D%27.68%27%20cy%3D%27.42%27%20r%3D%27.4%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23fff4d2%27%20stop-opacity%3D%27.95%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23fff4d2%27%20stop-opacity%3D%270%27%2F%3E%3C%2FradialGradient%3E%0A%3ClinearGradient%20id%3D%27m%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%270%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23f4efe2%27%20stop-opacity%3D%270%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23f4efe2%27%20stop-opacity%3D%27.75%27%2F%3E%3C%2FlinearGradient%3E%0A%3ClinearGradient%20id%3D%27r%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%270%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%239fc0c4%27%2F%3E%3Cstop%20offset%3D%27.5%27%20stop-color%3D%27%23d9e7e2%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%238fb3b8%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%0A%3Crect%20width%3D%271600%27%20height%3D%27900%27%20fill%3D%27url%28%23s%29%27%2F%3E%3Crect%20width%3D%271600%27%20height%3D%27900%27%20fill%3D%27url%28%23g%29%27%2F%3E%0A%3Cpath%20d%3D%27M0%20470%20L180%20300%20L260%20360%20L420%20190%20L560%20330%20L700%20250%20L860%20120%20L1010%20300%20L1130%20230%20L1300%20330%20L1440%20210%20L1600%20330%20L1600%20900%20L0%20900Z%27%20fill%3D%27%238d9fae%27%2F%3E%0A%3Cpath%20d%3D%27M420%20190%20L360%20262%20L400%20250%20L430%20285%20L470%20255%20L500%20280%20L460%20225Z%20M860%20120%20L790%20215%20L835%20205%20L865%20245%20L910%20210%20L945%20235%20L900%20170Z%20M1440%20210%20L1385%20275%20L1425%20268%20L1450%20300%20L1490%20270%20L1520%20280%20L1480%20235Z%27%20fill%3D%27%23f6f4ee%27%2F%3E%0A%3Cpath%20d%3D%27M0%20560%20L150%20450%20L320%20520%20L520%20400%20L720%20520%20L940%20420%20L1160%20520%20L1360%20430%20L1600%20530%20L1600%20900%20L0%20900Z%27%20fill%3D%27%235f7d77%27%2F%3E%0A%3Crect%20y%3D%27430%27%20width%3D%271600%27%20height%3D%27260%27%20fill%3D%27url%28%23m%29%27%2F%3E%0A%3Cpath%20d%3D%27M0%20640%20L200%20560%20L420%20620%20L650%20540%20L900%20630%20L1150%20550%20L1380%20620%20L1600%20570%20L1600%20900%20L0%20900Z%27%20fill%3D%27%2335563f%27%2F%3E%0A%3Cpath%20d%3D%27M-4%20650%20l-21%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-30%20l9%2030%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M26%20650%20l-20%200%20l5%20-21%20l-4%200%20l4%20-21%20l-3%200%20l9%20-28%20l9%2028%20l-3%200%20l4%2021%20l-4%200%20l5%2021%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M47%20650%20l-24%200%20l6%20-26%20l-5%200%20l5%20-26%20l-4%200%20l11%20-34%20l11%2034%20l-4%200%20l5%2026%20l-5%200%20l6%2026%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M58%20650%20l-26%200%20l7%20-28%20l-5%200%20l5%20-28%20l-4%200%20l12%20-37%20l12%2037%20l-4%200%20l5%2028%20l-5%200%20l7%2028%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M80%20650%20l-25%200%20l6%20-27%20l-5%200%20l5%20-27%20l-4%200%20l11%20-36%20l11%2036%20l-4%200%20l5%2027%20l-5%200%20l6%2027%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M104%20650%20l-20%200%20l5%20-21%20l-4%200%20l4%20-21%20l-3%200%20l9%20-28%20l9%2028%20l-3%200%20l4%2021%20l-4%200%20l5%2021%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M135%20650%20l-31%200%20l8%20-33%20l-6%200%20l6%20-33%20l-5%200%20l14%20-44%20l14%2044%20l-5%200%20l6%2033%20l-6%200%20l8%2033%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M151%20650%20l-22%200%20l5%20-23%20l-4%200%20l4%20-23%20l-3%200%20l10%20-31%20l10%2031%20l-3%200%20l4%2023%20l-4%200%20l5%2023%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M186%20650%20l-32%200%20l8%20-35%20l-6%200%20l6%20-35%20l-5%200%20l15%20-46%20l15%2046%20l-5%200%20l6%2035%20l-6%200%20l8%2035%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M208%20650%20l-24%200%20l6%20-26%20l-5%200%20l5%20-26%20l-4%200%20l11%20-35%20l11%2035%20l-4%200%20l5%2026%20l-5%200%20l6%2026%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M240%20650%20l-19%200%20l5%20-21%20l-4%200%20l4%20-21%20l-3%200%20l9%20-28%20l9%2028%20l-3%200%20l4%2021%20l-4%200%20l5%2021%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M260%20650%20l-23%200%20l6%20-24%20l-5%200%20l5%20-24%20l-3%200%20l10%20-33%20l10%2033%20l-3%200%20l5%2024%20l-5%200%20l6%2024%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M266%20650%20l-20%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-29%20l9%2029%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M293%20650%20l-31%200%20l8%20-33%20l-6%200%20l6%20-33%20l-5%200%20l14%20-44%20l14%2044%20l-5%200%20l6%2033%20l-6%200%20l8%2033%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M312%20650%20l-27%200%20l7%20-29%20l-5%200%20l5%20-29%20l-4%200%20l12%20-39%20l12%2039%20l-4%200%20l5%2029%20l-5%200%20l7%2029%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M346%20650%20l-24%200%20l6%20-26%20l-5%200%20l5%20-26%20l-4%200%20l11%20-34%20l11%2034%20l-4%200%20l5%2026%20l-5%200%20l6%2026%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M367%20650%20l-20%200%20l5%20-21%20l-4%200%20l4%20-21%20l-3%200%20l9%20-28%20l9%2028%20l-3%200%20l4%2021%20l-4%200%20l5%2021%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M378%20650%20l-22%200%20l5%20-23%20l-4%200%20l4%20-23%20l-3%200%20l10%20-31%20l10%2031%20l-3%200%20l4%2023%20l-4%200%20l5%2023%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M416%20650%20l-25%200%20l6%20-27%20l-5%200%20l5%20-27%20l-4%200%20l11%20-36%20l11%2036%20l-4%200%20l5%2027%20l-5%200%20l6%2027%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M430%20650%20l-27%200%20l7%20-29%20l-5%200%20l5%20-29%20l-4%200%20l12%20-39%20l12%2039%20l-4%200%20l5%2029%20l-5%200%20l7%2029%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M456%20650%20l-23%200%20l6%20-25%20l-5%200%20l5%20-25%20l-3%200%20l10%20-33%20l10%2033%20l-3%200%20l5%2025%20l-5%200%20l6%2025%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M487%20650%20l-29%200%20l7%20-31%20l-6%200%20l6%20-31%20l-4%200%20l13%20-41%20l13%2041%20l-4%200%20l6%2031%20l-6%200%20l7%2031%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M497%20650%20l-27%200%20l7%20-29%20l-5%200%20l5%20-29%20l-4%200%20l12%20-39%20l12%2039%20l-4%200%20l5%2029%20l-5%200%20l7%2029%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M526%20650%20l-31%200%20l8%20-34%20l-6%200%20l6%20-34%20l-5%200%20l14%20-45%20l14%2045%20l-5%200%20l6%2034%20l-6%200%20l8%2034%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M554%20650%20l-23%200%20l6%20-24%20l-5%200%20l5%20-24%20l-3%200%20l10%20-33%20l10%2033%20l-3%200%20l5%2024%20l-5%200%20l6%2024%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M583%20650%20l-20%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-29%20l9%2029%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M592%20650%20l-30%200%20l7%20-32%20l-6%200%20l6%20-32%20l-4%200%20l13%20-42%20l13%2042%20l-4%200%20l6%2032%20l-6%200%20l7%2032%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M609%20650%20l-26%200%20l6%20-28%20l-5%200%20l5%20-28%20l-4%200%20l12%20-37%20l12%2037%20l-4%200%20l5%2028%20l-5%200%20l6%2028%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M629%20650%20l-28%200%20l7%20-30%20l-6%200%20l6%20-30%20l-4%200%20l13%20-41%20l13%2041%20l-4%200%20l6%2030%20l-6%200%20l7%2030%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M669%20650%20l-27%200%20l7%20-29%20l-5%200%20l5%20-29%20l-4%200%20l12%20-39%20l12%2039%20l-4%200%20l5%2029%20l-5%200%20l7%2029%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M695%20650%20l-23%200%20l6%20-25%20l-5%200%20l5%20-25%20l-3%200%20l10%20-33%20l10%2033%20l-3%200%20l5%2025%20l-5%200%20l6%2025%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M713%20650%20l-27%200%20l7%20-29%20l-5%200%20l5%20-29%20l-4%200%20l12%20-39%20l12%2039%20l-4%200%20l5%2029%20l-5%200%20l7%2029%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M733%20650%20l-25%200%20l6%20-27%20l-5%200%20l5%20-27%20l-4%200%20l11%20-36%20l11%2036%20l-4%200%20l5%2027%20l-5%200%20l6%2027%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M762%20650%20l-32%200%20l8%20-35%20l-6%200%20l6%20-35%20l-5%200%20l15%20-46%20l15%2046%20l-5%200%20l6%2035%20l-6%200%20l8%2035%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M777%20650%20l-28%200%20l7%20-30%20l-6%200%20l6%20-30%20l-4%200%20l13%20-40%20l13%2040%20l-4%200%20l6%2030%20l-6%200%20l7%2030%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M789%20650%20l-29%200%20l7%20-31%20l-6%200%20l6%20-31%20l-4%200%20l13%20-41%20l13%2041%20l-4%200%20l6%2031%20l-6%200%20l7%2031%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M826%20650%20l-33%200%20l8%20-36%20l-7%200%20l7%20-36%20l-5%200%20l15%20-47%20l15%2047%20l-5%200%20l7%2036%20l-7%200%20l8%2036%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M853%20650%20l-23%200%20l6%20-24%20l-5%200%20l5%20-24%20l-3%200%20l10%20-33%20l10%2033%20l-3%200%20l5%2024%20l-5%200%20l6%2024%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M866%20650%20l-28%200%20l7%20-30%20l-6%200%20l6%20-30%20l-4%200%20l13%20-41%20l13%2041%20l-4%200%20l6%2030%20l-6%200%20l7%2030%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M880%20650%20l-25%200%20l6%20-27%20l-5%200%20l5%20-27%20l-4%200%20l11%20-36%20l11%2036%20l-4%200%20l5%2027%20l-5%200%20l6%2027%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M906%20650%20l-20%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-29%20l9%2029%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M927%20650%20l-30%200%20l7%20-32%20l-6%200%20l6%20-32%20l-4%200%20l13%20-43%20l13%2043%20l-4%200%20l6%2032%20l-6%200%20l7%2032%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M951%20650%20l-22%200%20l6%20-24%20l-4%200%20l4%20-24%20l-3%200%20l10%20-32%20l10%2032%20l-3%200%20l4%2024%20l-4%200%20l6%2024%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M980%20650%20l-31%200%20l8%20-34%20l-6%200%20l6%20-34%20l-5%200%20l14%20-45%20l14%2045%20l-5%200%20l6%2034%20l-6%200%20l8%2034%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M996%20650%20l-25%200%20l6%20-27%20l-5%200%20l5%20-27%20l-4%200%20l11%20-36%20l11%2036%20l-4%200%20l5%2027%20l-5%200%20l6%2027%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1030%20650%20l-32%200%20l8%20-34%20l-6%200%20l6%20-34%20l-5%200%20l14%20-45%20l14%2045%20l-5%200%20l6%2034%20l-6%200%20l8%2034%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1059%20650%20l-31%200%20l8%20-33%20l-6%200%20l6%20-33%20l-5%200%20l14%20-45%20l14%2045%20l-5%200%20l6%2033%20l-6%200%20l8%2033%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1069%20650%20l-25%200%20l6%20-26%20l-5%200%20l5%20-26%20l-4%200%20l11%20-35%20l11%2035%20l-4%200%20l5%2026%20l-5%200%20l6%2026%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1094%20650%20l-32%200%20l8%20-34%20l-6%200%20l6%20-34%20l-5%200%20l14%20-45%20l14%2045%20l-5%200%20l6%2034%20l-6%200%20l8%2034%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1131%20650%20l-21%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-30%20l9%2030%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1135%20650%20l-22%200%20l6%20-24%20l-4%200%20l4%20-24%20l-3%200%20l10%20-31%20l10%2031%20l-3%200%20l4%2024%20l-4%200%20l6%2024%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1159%20650%20l-26%200%20l6%20-28%20l-5%200%20l5%20-28%20l-4%200%20l12%20-37%20l12%2037%20l-4%200%20l5%2028%20l-5%200%20l6%2028%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1191%20650%20l-22%200%20l6%20-24%20l-4%200%20l4%20-24%20l-3%200%20l10%20-32%20l10%2032%20l-3%200%20l4%2024%20l-4%200%20l6%2024%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1200%20650%20l-25%200%20l6%20-27%20l-5%200%20l5%20-27%20l-4%200%20l11%20-35%20l11%2035%20l-4%200%20l5%2027%20l-5%200%20l6%2027%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1231%20650%20l-27%200%20l7%20-29%20l-5%200%20l5%20-29%20l-4%200%20l12%20-38%20l12%2038%20l-4%200%20l5%2029%20l-5%200%20l7%2029%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1268%20650%20l-29%200%20l7%20-31%20l-6%200%20l6%20-31%20l-4%200%20l13%20-41%20l13%2041%20l-4%200%20l6%2031%20l-6%200%20l7%2031%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1280%20650%20l-28%200%20l7%20-30%20l-6%200%20l6%20-30%20l-4%200%20l12%20-40%20l12%2040%20l-4%200%20l6%2030%20l-6%200%20l7%2030%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1307%20650%20l-19%200%20l5%20-21%20l-4%200%20l4%20-21%20l-3%200%20l9%20-28%20l9%2028%20l-3%200%20l4%2021%20l-4%200%20l5%2021%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1335%20650%20l-30%200%20l8%20-32%20l-6%200%20l6%20-32%20l-5%200%20l14%20-43%20l14%2043%20l-5%200%20l6%2032%20l-6%200%20l8%2032%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1358%20650%20l-30%200%20l8%20-32%20l-6%200%20l6%20-32%20l-5%200%20l14%20-43%20l14%2043%20l-5%200%20l6%2032%20l-6%200%20l8%2032%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1369%20650%20l-24%200%20l6%20-26%20l-5%200%20l5%20-26%20l-4%200%20l11%20-35%20l11%2035%20l-4%200%20l5%2026%20l-5%200%20l6%2026%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1385%20650%20l-28%200%20l7%20-30%20l-6%200%20l6%20-30%20l-4%200%20l13%20-40%20l13%2040%20l-4%200%20l6%2030%20l-6%200%20l7%2030%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1407%20650%20l-20%200%20l5%20-21%20l-4%200%20l4%20-21%20l-3%200%20l9%20-28%20l9%2028%20l-3%200%20l4%2021%20l-4%200%20l5%2021%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1433%20650%20l-21%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-30%20l9%2030%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1459%20650%20l-19%200%20l5%20-21%20l-4%200%20l4%20-21%20l-3%200%20l9%20-28%20l9%2028%20l-3%200%20l4%2021%20l-4%200%20l5%2021%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1474%20650%20l-21%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-30%20l9%2030%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1499%20650%20l-24%200%20l6%20-26%20l-5%200%20l5%20-26%20l-4%200%20l11%20-34%20l11%2034%20l-4%200%20l5%2026%20l-5%200%20l6%2026%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1520%20650%20l-31%200%20l8%20-34%20l-6%200%20l6%20-34%20l-5%200%20l14%20-45%20l14%2045%20l-5%200%20l6%2034%20l-6%200%20l8%2034%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1557%20650%20l-21%200%20l5%20-22%20l-4%200%20l4%20-22%20l-3%200%20l9%20-30%20l9%2030%20l-3%200%20l4%2022%20l-4%200%20l5%2022%20z%27%20fill%3D%27%232a4a35%27%2F%3E%3Cpath%20d%3D%27M1571%20650%20l-24%200%20l6%20-25%20l-5%200%20l5%20-25%20l-4%200%20l11%20-34%20l11%2034%20l-4%200%20l5%2025%20l-5%200%20l6%2025%20z%27%20fill%3D%27%232a4a35%27%2F%3E%0A%3Cpath%20d%3D%27M0%20720%20Q400%20680%20800%20720%20T1600%20700%20L1600%20900%20L0%20900Z%27%20fill%3D%27%231f4430%27%2F%3E%0A%3Cpath%20d%3D%27M520%20900%20Q700%20800%20760%20740%20Q800%20700%20840%20740%20Q900%20810%201120%20900Z%27%20fill%3D%27url%28%23r%29%27%20opacity%3D%27.9%27%2F%3E%0A%3Cpath%20d%3D%27M-3%20790%20l-49%200%20l12%20-53%20l-10%200%20l10%20-53%20l-7%200%20l22%20-71%20l22%2071%20l-7%200%20l10%2053%20l-10%200%20l12%2053%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M30%20790%20l-80%200%20l20%20-86%20l-16%200%20l16%20-86%20l-12%200%20l36%20-115%20l36%20115%20l-12%200%20l16%2086%20l-16%200%20l20%2086%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M42%20790%20l-62%200%20l16%20-67%20l-12%200%20l12%20-67%20l-9%200%20l28%20-89%20l28%2089%20l-9%200%20l12%2067%20l-12%200%20l16%2067%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M55%20790%20l-49%200%20l12%20-52%20l-10%200%20l10%20-52%20l-7%200%20l22%20-70%20l22%2070%20l-7%200%20l10%2052%20l-10%200%20l12%2052%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M82%20790%20l-54%200%20l14%20-58%20l-11%200%20l11%20-58%20l-8%200%20l25%20-78%20l25%2078%20l-8%200%20l11%2058%20l-11%200%20l14%2058%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M116%20790%20l-51%200%20l13%20-54%20l-10%200%20l10%20-54%20l-8%200%20l23%20-73%20l23%2073%20l-8%200%20l10%2054%20l-10%200%20l13%2054%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M118%20790%20l-79%200%20l20%20-84%20l-16%200%20l16%20-84%20l-12%200%20l35%20-113%20l35%20113%20l-12%200%20l16%2084%20l-16%200%20l20%2084%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M151%20790%20l-50%200%20l13%20-54%20l-10%200%20l10%20-54%20l-8%200%20l23%20-72%20l23%2072%20l-8%200%20l10%2054%20l-10%200%20l13%2054%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M173%20790%20l-46%200%20l12%20-49%20l-9%200%20l9%20-49%20l-7%200%20l21%20-66%20l21%2066%20l-7%200%20l9%2049%20l-9%200%20l12%2049%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M195%20790%20l-80%200%20l20%20-85%20l-16%200%20l16%20-85%20l-12%200%20l36%20-114%20l36%20114%20l-12%200%20l16%2085%20l-16%200%20l20%2085%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M224%20790%20l-70%200%20l17%20-75%20l-14%200%20l14%20-75%20l-10%200%20l31%20-100%20l31%20100%20l-10%200%20l14%2075%20l-14%200%20l17%2075%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M231%20790%20l-58%200%20l15%20-62%20l-12%200%20l12%20-62%20l-9%200%20l26%20-83%20l26%2083%20l-9%200%20l12%2062%20l-12%200%20l15%2062%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M250%20790%20l-72%200%20l18%20-78%20l-14%200%20l14%20-78%20l-11%200%20l33%20-103%20l33%20103%20l-11%200%20l14%2078%20l-14%200%20l18%2078%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M281%20790%20l-73%200%20l18%20-78%20l-15%200%20l15%20-78%20l-11%200%20l33%20-104%20l33%20104%20l-11%200%20l15%2078%20l-15%200%20l18%2078%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M297%20790%20l-53%200%20l13%20-57%20l-11%200%20l11%20-57%20l-8%200%20l24%20-76%20l24%2076%20l-8%200%20l11%2057%20l-11%200%20l13%2057%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M331%20790%20l-80%200%20l20%20-86%20l-16%200%20l16%20-86%20l-12%200%20l36%20-114%20l36%20114%20l-12%200%20l16%2086%20l-16%200%20l20%2086%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M353%20790%20l-74%200%20l18%20-79%20l-15%200%20l15%20-79%20l-11%200%20l33%20-105%20l33%20105%20l-11%200%20l15%2079%20l-15%200%20l18%2079%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M374%20790%20l-71%200%20l18%20-76%20l-14%200%20l14%20-76%20l-11%200%20l32%20-102%20l32%20102%20l-11%200%20l14%2076%20l-14%200%20l18%2076%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M381%20790%20l-63%200%20l16%20-68%20l-13%200%20l13%20-68%20l-10%200%20l29%20-91%20l29%2091%20l-10%200%20l13%2068%20l-13%200%20l16%2068%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M406%20790%20l-46%200%20l12%20-49%20l-9%200%20l9%20-49%20l-7%200%20l21%20-66%20l21%2066%20l-7%200%20l9%2049%20l-9%200%20l12%2049%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M419%20790%20l-55%200%20l14%20-59%20l-11%200%20l11%20-59%20l-8%200%20l25%20-79%20l25%2079%20l-8%200%20l11%2059%20l-11%200%20l14%2059%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M447%20790%20l-70%200%20l17%20-75%20l-14%200%20l14%20-75%20l-10%200%20l31%20-99%20l31%2099%20l-10%200%20l14%2075%20l-14%200%20l17%2075%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M485%20790%20l-61%200%20l15%20-65%20l-12%200%20l12%20-65%20l-9%200%20l27%20-87%20l27%2087%20l-9%200%20l12%2065%20l-12%200%20l15%2065%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M506%20790%20l-80%200%20l20%20-86%20l-16%200%20l16%20-86%20l-12%200%20l36%20-114%20l36%20114%20l-12%200%20l16%2086%20l-16%200%20l20%2086%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M528%20790%20l-58%200%20l14%20-62%20l-12%200%20l12%20-62%20l-9%200%20l26%20-83%20l26%2083%20l-9%200%20l12%2062%20l-12%200%20l14%2062%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M532%20790%20l-53%200%20l13%20-57%20l-11%200%20l11%20-57%20l-8%200%20l24%20-76%20l24%2076%20l-8%200%20l11%2057%20l-11%200%20l13%2057%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1073%20800%20l-59%200%20l15%20-63%20l-12%200%20l12%20-63%20l-9%200%20l27%20-84%20l27%2084%20l-9%200%20l12%2063%20l-12%200%20l15%2063%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1103%20800%20l-87%200%20l22%20-93%20l-17%200%20l17%20-93%20l-13%200%20l39%20-124%20l39%20124%20l-13%200%20l17%2093%20l-17%200%20l22%2093%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1128%20800%20l-70%200%20l18%20-75%20l-14%200%20l14%20-75%20l-11%200%20l32%20-100%20l32%20100%20l-11%200%20l14%2075%20l-14%200%20l18%2075%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1144%20800%20l-83%200%20l21%20-89%20l-17%200%20l17%20-89%20l-12%200%20l37%20-119%20l37%20119%20l-12%200%20l17%2089%20l-17%200%20l21%2089%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1150%20800%20l-77%200%20l19%20-83%20l-15%200%20l15%20-83%20l-12%200%20l35%20-111%20l35%20111%20l-12%200%20l15%2083%20l-15%200%20l19%2083%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1190%20800%20l-82%200%20l21%20-88%20l-16%200%20l16%20-88%20l-12%200%20l37%20-118%20l37%20118%20l-12%200%20l16%2088%20l-16%200%20l21%2088%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1206%20800%20l-70%200%20l18%20-75%20l-14%200%20l14%20-75%20l-11%200%20l32%20-100%20l32%20100%20l-11%200%20l14%2075%20l-14%200%20l18%2075%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1212%20800%20l-83%200%20l21%20-88%20l-17%200%20l17%20-88%20l-12%200%20l37%20-118%20l37%20118%20l-12%200%20l17%2088%20l-17%200%20l21%2088%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1236%20800%20l-83%200%20l21%20-89%20l-17%200%20l17%20-89%20l-12%200%20l37%20-119%20l37%20119%20l-12%200%20l17%2089%20l-17%200%20l21%2089%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1271%20800%20l-67%200%20l17%20-72%20l-13%200%20l13%20-72%20l-10%200%20l30%20-95%20l30%2095%20l-10%200%20l13%2072%20l-13%200%20l17%2072%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1278%20800%20l-89%200%20l22%20-95%20l-18%200%20l18%20-95%20l-13%200%20l40%20-127%20l40%20127%20l-13%200%20l18%2095%20l-18%200%20l22%2095%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1305%20800%20l-58%200%20l14%20-62%20l-12%200%20l12%20-62%20l-9%200%20l26%20-83%20l26%2083%20l-9%200%20l12%2062%20l-12%200%20l14%2062%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1311%20800%20l-57%200%20l14%20-61%20l-11%200%20l11%20-61%20l-9%200%20l26%20-81%20l26%2081%20l-9%200%20l11%2061%20l-11%200%20l14%2061%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1350%20800%20l-83%200%20l21%20-89%20l-17%200%20l17%20-89%20l-12%200%20l37%20-119%20l37%20119%20l-12%200%20l17%2089%20l-17%200%20l21%2089%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1352%20800%20l-84%200%20l21%20-90%20l-17%200%20l17%20-90%20l-13%200%20l38%20-120%20l38%20120%20l-13%200%20l17%2090%20l-17%200%20l21%2090%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1392%20800%20l-77%200%20l19%20-83%20l-15%200%20l15%20-83%20l-12%200%20l35%20-110%20l35%20110%20l-12%200%20l15%2083%20l-15%200%20l19%2083%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1396%20800%20l-73%200%20l18%20-78%20l-15%200%20l15%20-78%20l-11%200%20l33%20-104%20l33%20104%20l-11%200%20l15%2078%20l-15%200%20l18%2078%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1411%20800%20l-52%200%20l13%20-55%20l-10%200%20l10%20-55%20l-8%200%20l23%20-74%20l23%2074%20l-8%200%20l10%2055%20l-10%200%20l13%2055%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1451%20800%20l-77%200%20l19%20-82%20l-15%200%20l15%20-82%20l-12%200%20l35%20-110%20l35%20110%20l-12%200%20l15%2082%20l-15%200%20l19%2082%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1461%20800%20l-88%200%20l22%20-95%20l-18%200%20l18%20-95%20l-13%200%20l40%20-126%20l40%20126%20l-13%200%20l18%2095%20l-18%200%20l22%2095%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1478%20800%20l-86%200%20l21%20-92%20l-17%200%20l17%20-92%20l-13%200%20l39%20-123%20l39%20123%20l-13%200%20l17%2092%20l-17%200%20l21%2092%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1508%20800%20l-59%200%20l15%20-64%20l-12%200%20l12%20-64%20l-9%200%20l27%20-85%20l27%2085%20l-9%200%20l12%2064%20l-12%200%20l15%2064%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1514%20800%20l-63%200%20l16%20-67%20l-13%200%20l13%20-67%20l-9%200%20l28%20-90%20l28%2090%20l-9%200%20l13%2067%20l-13%200%20l16%2067%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1534%20800%20l-74%200%20l19%20-80%20l-15%200%20l15%20-80%20l-11%200%20l33%20-106%20l33%20106%20l-11%200%20l15%2080%20l-15%200%20l19%2080%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1554%20800%20l-68%200%20l17%20-73%20l-14%200%20l14%20-73%20l-10%200%20l30%20-97%20l30%2097%20l-10%200%20l14%2073%20l-14%200%20l17%2073%20z%27%20fill%3D%27%23143020%27%2F%3E%3Cpath%20d%3D%27M1571%20800%20l-87%200%20l22%20-94%20l-17%200%20l17%20-94%20l-13%200%20l39%20-125%20l39%20125%20l-13%200%20l17%2094%20l-17%200%20l22%2094%20z%27%20fill%3D%27%23143020%27%2F%3E%0A%3Crect%20y%3D%27640%27%20width%3D%271600%27%20height%3D%27120%27%20fill%3D%27url%28%23m%29%27%20opacity%3D%27.6%27%2F%3E%0A%3C%2Fsvg%3E");
+  --img-hero:url("https://images.pexels.com/photos/37241100/pexels-photo-37241100/free-photo-of-vista-panoramica-del-valle-de-las-exuberantes-montanas-de-cachemira.jpeg?cs=tinysrgb&w=2400"),var(--scene);
+  --img-story:url("https://images.pexels.com/photos/37178506/pexels-photo-37178506/free-photo-of-pintoresco-pueblo-de-montana-en-verano.jpeg?cs=tinysrgb&w=1400"),var(--scene);
+  --img-r1:url("https://images.pexels.com/photos/38401156/pexels-photo-38401156/free-photo-of-vista-de-las-montanas-nevadas-en-pahalgam.jpeg?cs=tinysrgb&w=1400"),var(--scene);
+  --img-r2:url("https://images.pexels.com/photos/38678186/pexels-photo-38678186/free-photo-of-adventure-in-the-kashmir-mountains.jpeg?cs=tinysrgb&w=1400"),var(--scene);
+  --img-r3:url("https://images.pexels.com/photos/38678187/pexels-photo-38678187/free-photo-of-man-relaxing-on-jeep-in-kashmir-forest-landscape.jpeg?cs=tinysrgb&w=1400"),var(--scene);
+  --img-g1:url("https://images.pexels.com/photos/38678222/pexels-photo-38678222.jpeg?cs=tinysrgb&w=1600"),var(--scene);
+  --img-g2:url("https://images.pexels.com/photos/38678220/pexels-photo-38678220.jpeg?cs=tinysrgb&w=1200"),var(--scene);
+  --img-g3:url("https://images.pexels.com/photos/38678219/pexels-photo-38678219.jpeg?cs=tinysrgb&w=1200"),var(--scene);
+  --img-g4:url("https://images.pexels.com/photos/38678189/pexels-photo-38678189.jpeg?cs=tinysrgb&w=1200"),var(--scene);
+  --img-g5:url("https://images.pexels.com/photos/38678188/pexels-photo-38678188.jpeg?cs=tinysrgb&w=1200"),var(--scene);
+  --img-g6:url("https://images.pexels.com/photos/38678184/pexels-photo-38678184.jpeg?cs=tinysrgb&w=1200"),var(--scene);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font:400 17px/1.65 var(--sans);color:var(--ink);background:var(--ivory)}
+img,.ph{display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(2.2rem,4.5vw,3.6rem);color:var(--forest)}
+.wrap{width:min(1180px,92%);margin:auto}
+section{padding:clamp(72px,10vw,130px) 0}
+.lead{max-width:56ch;margin-top:1rem;color:#4a5148}
+
+/* photo blocks: image over a tonal gradient fallback */
+.ph{background-size:cover;background-position:center;background-color:var(--forest-2);border-radius:20px;overflow:hidden}
+.zoom{overflow:hidden;border-radius:20px}
+.zoom .ph{border-radius:0;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.zoom:hover .ph{transform:scale(1.06)}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:50;padding-top:12px;transition:.4s}
+.bar{width:min(1180px,94%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:10px 14px 10px 24px;border-radius:999px;
+  background:rgba(244,239,226,.12);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border:1px solid rgba(255,255,255,.22);color:#fff;transition:.4s}
+nav.solid .bar{background:rgba(20,48,31,.82);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.logo{font:600 1.7rem var(--serif);text-decoration:none;letter-spacing:.02em}
+.links{display:flex;gap:1.6rem;list-style:none;padding:0}
+.links a{text-decoration:none;font-size:.95rem;position:relative;padding:4px 0;opacity:.9}
+.links a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.links a:hover::after,.links a.on::after{transform:scaleX(1)}
+.btn{display:inline-block;text-decoration:none;font:500 .95rem var(--sans);padding:12px 24px;border-radius:999px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;cursor:pointer;transition:background .3s,transform .3s}
+.btn:hover{background:rgba(255,255,255,.28);transform:translateY(-2px)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#1b1408}
+.btn.gold:hover{background:#cdaa6b}
+.btn.dark{background:var(--forest);border-color:var(--forest);color:#fff}
+.btn.dark:hover{background:var(--forest-2)}
+.btn.line{color:var(--forest);border-color:var(--forest);background:transparent}
+#burger{display:none;background:none;border:0;color:#fff;width:44px;height:44px;cursor:pointer}
+#burger span{display:block;height:2px;background:#fff;margin:6px 10px;transition:.35s}
+#burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+#burger.open span:nth-child(2){opacity:0}
+#burger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden;padding:120px 0 60px;background:var(--forest)}
+.hero-bg{position:absolute;inset:-8% 0;background:linear-gradient(180deg,rgba(10,24,16,.55),rgba(10,24,16,.25) 40%,rgba(10,24,16,.8)),var(--img-hero),linear-gradient(160deg,#6d8a7a,#2b4b3a 55%,#14301f);background-size:cover;background-position:center;will-change:transform}
+.mist{position:absolute;left:-20%;width:140%;height:34%;bottom:0;background:radial-gradient(ellipse at 50% 100%,rgba(244,239,226,.38),transparent 65%);filter:blur(24px);animation:drift 28s ease-in-out infinite alternate}
+.mist.b{bottom:12%;opacity:.55;animation-duration:40s;animation-direction:alternate-reverse}
+@keyframes drift{to{transform:translateX(9%)}}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr .85fr;gap:3rem;align-items:end}
+.hero h1{font-size:clamp(3.6rem,10vw,8rem);font-weight:400}
+.hero p.tag{font:italic 400 clamp(1.4rem,2.6vw,2rem)/1.25 var(--serif);margin:1rem 0;color:#f0e6cc}
+.hero p.intro{max-width:46ch;opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.panel{padding:26px;border-radius:24px;background:rgba(244,239,226,.14);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.25);animation:float 9s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.panel h3{font-size:1.7rem;margin-bottom:.2rem}
+.panel small{display:block;opacity:.85;line-height:1.4;margin-bottom:1rem}
+.field{display:block;margin-bottom:.8rem;font-size:.85rem}
+.field input,.field select{width:100%;margin-top:4px;padding:11px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.3);background:rgba(10,24,16,.4);color:#fff;font:inherit;color-scheme:dark}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.panel .btn{width:100%;text-align:center}
+#formMsg{font-size:.85rem;margin-top:.7rem;min-height:1.3em;color:#f0e6cc}
+.scroll{position:absolute;bottom:22px;left:50%;width:1px;height:54px;background:linear-gradient(var(--gold),transparent);animation:pulse 2.4s infinite}
+@keyframes pulse{50%{opacity:.25}}
+.orb{position:absolute;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);animation:float 14s ease-in-out infinite}
+
+/* story */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.story .ph{aspect-ratio:4/5;background-image:var(--img-story),linear-gradient(170deg,#8a9a7c,#3a5a43)}
+.stack{position:relative}
+.stack .zoom{box-shadow:0 30px 60px -25px rgba(20,48,31,.5)}
+.badge{position:absolute;right:-18px;bottom:30px;padding:18px 22px;border-radius:18px;background:rgba(244,239,226,.75);backdrop-filter:blur(14px);border:1px solid rgba(91,62,43,.15);font:italic 1.25rem/1.2 var(--serif);color:var(--walnut)}
+
+/* rooms */
+.dark-sec{background:var(--forest);color:var(--ivory)}
+.dark-sec h2{color:var(--ivory)}.dark-sec .lead{color:#c8cfc4}
+.note{display:inline-block;margin-top:1rem;padding:6px 14px;border-radius:999px;background:rgba(185,151,91,.18);color:var(--gold);font-size:.85rem}
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:3rem}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:12px;transition:transform .5s,background .5s,box-shadow .5s}
+.card:hover{transform:translateY(-8px);background:rgba(255,255,255,.1);box-shadow:0 30px 50px -25px rgba(0,0,0,.6)}
+.card .zoom{cursor:zoom-in;border-radius:16px}
+.card .ph{aspect-ratio:4/3;border-radius:0}
+.card .body{padding:20px 12px 12px}
+.card h3{font-size:2rem}
+.card p{font-size:.95rem;color:#c8cfc4;margin:.5rem 0 1rem}
+.meta{font-size:.85rem;color:var(--gold);margin-bottom:1.1rem}
+.card .cta{margin:0;gap:.6rem}
+.card .btn{padding:10px 18px;font-size:.88rem}
+
+/* gallery */
+.grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:14px;margin-top:3rem}
+.grid .zoom{cursor:zoom-in;position:relative}
+.grid .ph{height:100%}
+.grid .zoom:nth-child(1){grid-column:span 5;grid-row:span 3}
+.grid .zoom:nth-child(2){grid-column:span 4;grid-row:span 2}
+.grid .zoom:nth-child(3){grid-column:span 3;grid-row:span 2}
+.grid .zoom:nth-child(4){grid-column:span 3;grid-row:span 2}
+.grid .zoom:nth-child(5){grid-column:span 4;grid-row:span 1}
+.grid .zoom:nth-child(6){grid-column:span 4;grid-row:span 1}
+.grid figcaption{position:absolute;left:14px;bottom:12px;color:#fff;font-size:.85rem;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+
+/* experiences */
+.exp{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:3rem}
+.exp div{padding:26px;border-radius:20px;background:#fff;box-shadow:0 12px 30px -18px rgba(20,48,31,.4);border-top:3px solid var(--gold)}
+.exp h3{font-size:1.6rem;color:var(--walnut);margin-bottom:.4rem}
+.exp p{font-size:.95rem;color:#4a5148}
+
+/* explore */
+.places{margin-top:2.5rem;border-top:1px solid rgba(91,62,43,.25)}
+.place{display:grid;grid-template-columns:200px 1fr;gap:2rem;padding:1.6rem 0;border-bottom:1px solid rgba(91,62,43,.25)}
+.place h3{font-size:1.9rem;color:var(--walnut)}
+.place span{font-size:.9rem;color:#6a6f66;display:block;margin-top:.2rem}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.contact form{display:grid;gap:.9rem}
+.contact input,.contact textarea,.contact select{width:100%;padding:13px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font:inherit;color-scheme:dark}
+.contact label{font-size:.88rem;color:#c8cfc4;display:block}
+.contact textarea{min-height:110px}
+footer{background:#0e2217;color:#9fa89b;text-align:center;padding:28px 4%;font-size:.85rem}
+
+/* floating whatsapp */
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;text-decoration:none;color:#fff;font-weight:500;background:rgba(20,48,31,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.3);box-shadow:0 14px 34px -10px rgba(0,0,0,.5);transition:.3s}
+.wa:hover{background:#1f7a4a;transform:translateY(-3px)}
+.wa svg{width:22px;height:22px;fill:currentColor}
+
+/* modal + lightbox */
+.overlay{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(8,18,12,.88);backdrop-filter:blur(8px);opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.overlay.show{opacity:1;visibility:visible}
+.sheet{width:min(960px,100%);max-height:92vh;overflow:auto;background:var(--ivory);border-radius:24px;padding:28px;transform:translateY(24px) scale(.98);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.overlay.show .sheet{transform:none}
+.sheet .imgs{display:grid;grid-template-columns:2fr 1fr;gap:10px;margin-bottom:1.4rem}
+.sheet .imgs .ph{aspect-ratio:4/3;cursor:zoom-in}
+.sheet .imgs .stk{display:grid;gap:10px}
+.sheet .imgs .stk .ph{aspect-ratio:auto;height:100%}
+.sheet h3{font-size:2.6rem;color:var(--forest)}
+.sheet ul{columns:2;margin:1rem 0 1.4rem;padding-left:1.1rem}
+.close{position:absolute;top:18px;right:18px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);color:#fff;font-size:1.5rem;cursor:pointer}
+#lb .ph{width:min(1100px,94vw);height:80vh;border-radius:16px;background-size:contain;background-repeat:no-repeat;background-color:transparent}
+#lb .fall{position:absolute;color:#fff;font:italic 1.2rem var(--serif);bottom:24px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s,transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:960px){
+  .links,.bar>.btn{display:none}#burger{display:block}
+  .links.open{display:flex;position:absolute;top:70px;left:3%;right:3%;flex-direction:column;gap:0;padding:14px 24px;border-radius:24px;background:rgba(20,48,31,.94);backdrop-filter:blur(16px);animation:drop .4s}
+  .links.open a{display:block;padding:12px 0;font-size:1.1rem}
+  @keyframes drop{from{opacity:0;transform:translateY(-10px)}}
+  .hero .wrap,.story,.contact{grid-template-columns:1fr}
+  .rooms{grid-template-columns:1fr}.exp{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}.grid .zoom:nth-child(n){grid-column:auto;grid-row:auto}.grid .zoom:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .place{grid-template-columns:1fr;gap:.4rem}.badge{right:10px}.sheet ul{columns:1}
+}
+@media(max-width:560px){.exp{grid-template-columns:1fr}.wa span{display:none}.wa{padding:14px}.sheet .imgs{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}.hero-bg{transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="bar">
+    <a class="logo" href="#home">The Walnut</a>
+    <ul class="links" id="links">
+      <li><a href="#home">Home</a></li><li><a href="#rooms">Stay</a></li><li><a href="#gallery">Gallery</a></li>
+      <li><a href="#experiences">Experiences</a></li><li><a href="#explore">Explore Pahalgam</a></li>
+      <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn gold wa-link" data-msg="Hello, I would like to enquire about a stay at The Walnut." href="#" target="_blank" rel="noopener">WhatsApp enquiry</a>
+    <button id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="orb" style="width:180px;height:180px;top:18%;right:8%"></div>
+  <div class="orb" style="width:90px;height:90px;top:46%;left:6%;animation-delay:-5s"></div>
+  <div class="mist"></div><div class="mist b"></div>
+  <div class="wrap">
+    <div>
+      <h1>The Walnut</h1>
+      <p class="tag">Slow mornings above the Lidder.</p>
+      <p class="intro">A quiet mountain retreat in Pahalgam, Kashmir. Pine air, river sound and a warm room at the end of the day.</p>
+      <div class="cta"><a class="btn gold" href="#rooms">Explore Our Rooms</a><a class="btn" href="#explore">Discover Pahalgam</a></div>
+    </div>
+    <form class="panel" id="enq">
+      <h3>Plan your stay</h3>
+      <small>Sends an enquiry on WhatsApp. This demo does not check availability or confirm bookings.</small>
+      <div class="row2">
+        <label class="field">Check-in<input type="date" id="ci" required></label>
+        <label class="field">Check-out<input type="date" id="co" required></label>
+      </div>
+      <label class="field">Guests<select id="gs"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label>
+      <button class="btn gold" type="submit">Send enquiry</button>
+      <p id="formMsg" role="status"></p>
+    </form>
+  </div>
+  <div class="scroll" aria-hidden="true"></div>
+</header>
+
+<section id="about"><div class="wrap story">
+  <div class="stack rv"><div class="zoom"><div class="ph"></div></div><div class="badge">Pahalgam,<br>Kashmir</div></div>
+  <div class="rv">
+    <h2>A house built around the view</h2>
+    <p class="lead">The Walnut is a demonstration project for a boutique mountain stay: a small number of rooms, local food, and time set aside for walking, reading and doing very little.</p>
+    <p class="lead">All text and details on this page are sample content. Replace them with your verified information before using this site for real guests.</p>
+  </div>
+</div></section>
+
+<section class="dark-sec" id="rooms"><div class="wrap">
+  <div class="rv"><h2>Rooms</h2><p class="lead">Three sample room categories. Capacity, beds and amenities are illustrative until verified.</p><span class="note">Demo content: no rates or availability shown</span></div>
+  <div class="rooms" id="roomGrid"></div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="rv"><h2>Gallery</h2><p class="lead">Tap any photograph to view it full screen.</p></div>
+  <div class="grid rv" id="grid"></div>
+</div></section>
+
+<section id="experiences" style="background:#ebe5d3"><div class="wrap">
+  <div class="rv"><h2>Experiences</h2><p class="lead">Sample activities a guest might enjoy. Confirm what you actually offer before publishing.</p></div>
+  <div class="exp rv">
+    <div><h3>Riverside walks</h3><p>Easy paths along the Lidder at a pace that suits the day.</p></div>
+    <div><h3>Pony and trek day trips</h3><p>Guided outings to nearby meadows, arranged with local operators.</p></div>
+    <div><h3>Kashmiri table</h3><p>Home-style meals and kahwa served with the mountains in view.</p></div>
+    <div><h3>Evening by the fire</h3><p>A quiet hour after the light drops. Seasonal and weather dependent.</p></div>
+  </div>
+</div></section>
+
+<section id="explore"><div class="wrap">
+  <div class="rv"><h2>Explore Pahalgam</h2><p class="lead">Well-known places around the town. Distances and travel times are not listed here; check them locally.</p></div>
+  <div class="places rv">
+    <div class="place"><h3>Betaab Valley</h3><div>Meadow and pine valley, named after a film shot here.<span>A short drive from town</span></div></div>
+    <div class="place"><h3>Aru Valley</h3><div>Open pasture, a village and the starting point of several treks.<span>Day trip</span></div></div>
+    <div class="place"><h3>Baisaran</h3><div>A high meadow reached on foot or by pony. Check current access before planning.<span>Check access locally</span></div></div>
+    <div class="place"><h3>Lidder River</h3><div>Glacier-fed water that runs through the town.<span>Walkable</span></div></div>
+  </div>
+</div></section>
+
+<section class="dark-sec" id="contact"><div class="wrap contact">
+  <div class="rv"><h2>Contact</h2><p class="lead">Questions about a stay? Message us on WhatsApp. Replace the number and address below with your own.</p>
+    <p class="lead">Pahalgam, Jammu &amp; Kashmir, India<br>WhatsApp: set in the <code>WA_NUMBER</code> line of this file</p></div>
+  <form class="rv" id="cf">
+    <label>Name<input id="cn" required></label>
+    <label>Interested in<select id="cr"><option>Superior Room</option><option>Deluxe Room</option><option>Junior Suite</option><option>Not sure yet</option></select></label>
+    <label>Message<textarea id="cm"></textarea></label>
+    <button class="btn gold" type="submit">Send on WhatsApp</button>
+  </form>
+</div></section>
+<footer>The Walnut is a demonstration website. Not a live booking business.<br>Preview photos from Pexels (Rubaitul Azad and other contributors). Replace with your own photos before launch.</footer>
+
+<a class="wa wa-link" data-msg="Hello, I would like to enquire about The Walnut." href="#" target="_blank" rel="noopener" aria-label="Enquire on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.300 1.700 2.100 1.200 1 2.200 1.400 2.500 1.500.3.1.5.1.6-.1l.9-1.100c.2-.3.4-.2.600-.1l1.900.9c.3.1.5.2.5.3.1.2.1.8-.1 1.400z"/></svg><span>WhatsApp</span></a>
+
+<div class="overlay" id="md" role="dialog" aria-modal="true" aria-label="Room details"><button class="close" data-x aria-label="Close">×</button><div class="sheet" id="sheet"></div></div>
+<div class="overlay" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="close" data-x aria-label="Close">×</button><div class="ph" id="lbImg"></div></div>
+
+<script>
+/* ===== EDIT ME: your WhatsApp number (country code, digits only) ===== */
+const WA_NUMBER = "910000000000";
+
+/* ===== EDIT ME: sample rooms. All details are illustrative. ===== */
+const ROOMS = [
+  {name:"Superior Room", img:"--img-r1", grad:"#7d8f74,#3b5842", desc:"A calm, compact room with a mountain-facing window.", cap:"Sample: 2 guests · 1 double bed", am:["Sample: Heating","Sample: Private bathroom","Sample: Tea and coffee","Sample: Wi-Fi"]},
+  {name:"Deluxe Room", img:"--img-r2", grad:"#8f7a5c,#4d3a29", desc:"More space, warm walnut tones and a seating corner.", cap:"Sample: 3 guests · 1 double + 1 single bed", am:["Sample: Heating","Sample: Seating area","Sample: Private bathroom","Sample: Valley view"]},
+  {name:"Junior Suite", img:"--img-r3", grad:"#6f8a8c,#2d4a4d", desc:"A separate sitting area and the widest views in the house.", cap:"Sample: 4 guests · 2 beds", am:["Sample: Sitting area","Sample: Heating","Sample: Large windows","Sample: Private bathroom"]}
+];
+const GALLERY = [["--img-g1","Pine slopes","#5f7f68,#233f2e"],["--img-g2","River light","#6f8c93,#2a444b"],["--img-g3","Morning mist","#9aa89a,#4b6552"],["--img-g4","Walnut wood","#8a6a4d,#472f20"],["--img-g5","Meadow","#8fa073,#3d5530"],["--img-g6","Evening","#a08561,#3c2e22"]];
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const ph=(v,g,x="")=>`<div class="ph" ${x} style="background-image:var(${v}),linear-gradient(160deg,${g})"></div>`;
+const wa=t=>`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(t)}`;
+const waBind=()=>$$(".wa-link").forEach(a=>a.href=wa(a.dataset.msg));
+
+/* render rooms + gallery */
+$("#roomGrid").innerHTML=ROOMS.map((r,i)=>`<article class="card rv"><div class="zoom" data-lb="${r.img}" data-g="${r.grad}" data-t="${r.name}">${ph(r.img,r.grad)}</div>
+ <div class="body"><h3>${r.name}</h3><p>${r.desc}</p><div class="meta">${r.cap}</div>
+ <div class="cta"><button class="btn" data-room="${i}">View Details</button><a class="btn gold" target="_blank" rel="noopener" href="${wa('Hello, I would like to enquire about the '+r.name+' at The Walnut.')}">Enquire on WhatsApp</a></div></div></article>`).join("");
+$("#grid").innerHTML=GALLERY.map(g=>`<figure class="zoom" data-lb="${g[0]}" data-g="${g[2]}" data-t="${g[1]}" tabindex="0">${ph(g[0],g[2])}<figcaption>${g[1]}</figcaption></figure>`).join("");
+waBind();
+
+/* overlays */
+let last;
+function openO(el){last=document.activeElement;el.classList.add("show");document.body.style.overflow="hidden";el.querySelector(".close").focus()}
+function closeO(){$$(".overlay.show").forEach(o=>o.classList.remove("show"));document.body.style.overflow="";last&&last.focus()}
+function lightbox(v,g,t){$("#lbImg").style.backgroundImage=`var(${v}),linear-gradient(160deg,${g})`;$("#lbImg").setAttribute("aria-label",t);openO($("#lb"))}
+document.addEventListener("click",e=>{
+  const z=e.target.closest("[data-lb]"); if(z&&!e.target.closest("#sheet")) return lightbox(z.dataset.lb,z.dataset.g,z.dataset.t);
+  const l=e.target.closest("#sheet [data-lbs]"); if(l) return lightbox(l.dataset.lbs,l.dataset.g,"Room photo");
+  const rb=e.target.closest("[data-room]"); if(rb){const r=ROOMS[rb.dataset.room];
+    $("#sheet").innerHTML=`<div class="imgs">${ph(r.img,r.grad,`data-lbs="${r.img}" data-g="${r.grad}"`)}<div class="stk">${ph("--img-g1",r.grad)}${ph("--img-g2",r.grad)}</div></div>
+    <h3>${r.name}</h3><p class="lead">${r.desc}</p><p class="meta" style="color:var(--walnut);margin-top:.8rem">${r.cap}. Illustrative until verified.</p>
+    <ul>${r.am.map(a=>`<li>${a}</li>`).join("")}</ul>
+    <a class="btn dark" target="_blank" rel="noopener" href="${wa('Hello, I would like to enquire about the '+r.name+' at The Walnut.')}">Enquire on WhatsApp</a>`;
+    return openO($("#md"));}
+  if(e.target.closest("[data-x]")||e.target.classList.contains("overlay")) closeO();
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeO(); if(e.key==="Enter"&&e.target.matches("figure[data-lb]"))e.target.click()});
+
+/* nav */
+const nav=$("#nav"),burger=$("#burger"),links=$("#links");
+burger.onclick=()=>{const o=links.classList.toggle("open");burger.classList.toggle("open",o);burger.setAttribute("aria-expanded",o)};
+links.addEventListener("click",e=>{if(e.target.tagName==="A"){links.classList.remove("open");burger.classList.remove("open")}});
+const heroBg=$("#heroBg"),still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+let tick=false;
+addEventListener("scroll",()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{
+  const y=scrollY;nav.classList.toggle("solid",y>60);
+  if(!still&&y<innerHeight)heroBg.style.transform=`translate3d(0,${y*.22}px,0)`;tick=false})},{passive:true});
+const secs=$$("section[id],header[id]"),navA=$$(".links a");
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;navA.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+id))}}),{rootMargin:"-45% 0px -50% 0px"}).observe&&secs.forEach(s=>new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)navA.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"}).observe(s));
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+$$(".rv").forEach(el=>io.observe(el));
+
+/* enquiry forms (frontend only; opens WhatsApp) */
+const today=new Date().toISOString().slice(0,10);$("#ci").min=today;$("#co").min=today;
+$("#ci").onchange=()=>{$("#co").min=$("#ci").value||today};
+$("#enq").onsubmit=e=>{e.preventDefault();const a=$("#ci").value,b=$("#co").value,m=$("#formMsg");
+  if(b<=a){m.textContent="Check-out must be after check-in.";return}
+  m.textContent="Opening WhatsApp. Dates are requests only, not a confirmed booking.";
+  open(wa(`Hello, I would like to enquire about a stay at The Walnut.\nCheck-in: ${a}\nCheck-out: ${b}\nGuests: ${$("#gs").value}`),"_blank","noopener")};
+$("#cf").onsubmit=e=>{e.preventDefault();
+  open(wa(`Hello, I am ${$("#cn").value}. Interested in: ${$("#cr").value}.\n${$("#cm").value}`),"_blank","noopener")};
+</script>
+</body>
+</html>
